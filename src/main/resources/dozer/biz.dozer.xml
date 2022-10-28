@@ -1,0 +1,48 @@
+<mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://dozermapper.github.io/schema/bean-mapping"
+          xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping
+                             http://dozermapper.github.io/schema/bean-mapping.xsd">
+
+    <!--描述两个类中属性的对应关系，对于两个类中同名的属性可以不映射-->
+
+    <mapping date-format="yyyy-MM-dd">
+        <class-a>mao.dozer_demo.entity.UserEntity</class-a>
+        <class-b>mao.dozer_demo.entity.UserDTO</class-b>
+
+        <field>
+            <a>id</a>
+            <b>userId</b>
+        </field>
+        <field>
+            <a>name</a>
+            <b>userName</b>
+        </field>
+        <field>
+            <a>age</a>
+            <b>userAge</b>
+        </field>
+
+    </mapping>
+
+    <mapping date-format="yyyy-MM-dd" map-id="user">
+        <class-a>mao.dozer_demo.entity.UserEntity</class-a>
+        <class-b>mao.dozer_demo.entity.UserDTO</class-b>
+
+        <field>
+            <a>id</a>
+            <b>userId</b>
+        </field>
+        <field>
+            <a>name</a>
+            <b>userName</b>
+        </field>
+        <field>
+            <a>age</a>
+            <b>userAge</b>
+        </field>
+
+    </mapping>
+
+
+
+</mappings>
